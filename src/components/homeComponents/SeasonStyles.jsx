@@ -1,8 +1,7 @@
 import { Link } from "react-router-dom";
 import styles from "./SeasonStyles.module.css";
 import useHomeProducts from "../../apis/homeProducts";
-import { useContext, useEffect, useRef, useState } from "react";
-import { StylesContext } from "../../contexts/StylesContext";
+import { useEffect, useRef, useState } from "react";
 
 const SLIDE_TRANSITION_MS = 800;
 
