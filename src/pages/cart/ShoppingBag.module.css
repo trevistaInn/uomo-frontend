@@ -1,0 +1,223 @@
+﻿.divider {
+  display: grid;
+  grid-template-columns: 1fr 0.5fr;
+  gap: clamp(1rem, 2vw, 2rem);
+}
+
+.item{
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.item1 {
+  display: flex;
+  align-items: center;
+}
+
+.productMeta {
+  display: flex;
+  align-items: center;
+  font-size: smaller;
+  gap: 0.8rem;
+  min-width: 0;
+}
+
+.productMeta img{
+  width: 5rem;
+  aspect-ratio: 1/1;
+}
+
+.prices{
+  width: 60%;
+  font-size: small;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.qtyBox {
+  border: 2px solid #e5e7eb;
+  margin-left: -2rem;
+  min-height: 2rem;
+  min-width: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.deleteButton {
+  width: 2rem;
+  height: 2rem;
+  margin-left: 0.6rem;
+  border-radius: 4px;
+  cursor: pointer;
+  background: #fff;
+}
+
+.coupon {
+  margin: 1.25rem 0;
+  min-height: 3rem;
+  width: 97%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.couponForm {
+  border: 2px solid #e5e7eb;
+  min-height: 3rem;
+  width: min(100%, 24rem);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 0.75rem;
+  gap: 0.5rem;
+}
+
+.couponForm input {
+  width: 100%;
+  border: none;
+  outline: none;
+}
+
+.couponForm > button {
+  width: 100%;
+  text-align: right;
+}
+
+.updateCart {
+  width: min(100%, 14rem);
+}
+
+.cartAmount {
+  width: 100%;
+}
+
+.totalsCard {
+  padding: clamp(1rem, 2vw, 2rem);
+  border: 2px solid #e5e7eb;
+}
+
+.subtotal {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid gray;
+  font-size: 14px;
+}
+
+.shippingRow {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #e5e7eb;
+  padding-bottom: 0.9rem;
+  padding-top: 0.9rem;
+}
+
+.shippingRow > div{
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+} 
+
+.line {
+  width: 100%;
+  margin: 1rem 0;
+}
+
+.shippingOption {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+.vat {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #e5e7eb;
+  padding-bottom: 0.5rem;
+  margin-top: 0.7rem;
+  font-size: 14px;
+}
+
+.total {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.7rem;
+  font-size: 16px;
+}
+
+.changeAddress {
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.changeAddress1 {
+  width: 50%;
+  margin-left: 10px;
+  border: 1px solid;
+}
+
+@media (max-width: 992px) {
+  .divider {
+    grid-template-columns: 1fr;
+  }
+
+  .cartAmount {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .headerTitles {
+    display: none;
+  }
+
+  .item {
+    width: 100%;
+    align-items: flex-start;
+  }
+
+  .titles {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .prices {
+    width: 100%;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .deleteButton {
+    margin-left: 0;
+  }
+
+  .coupon {
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .couponForm {
+    width: 100%;
+  }
+
+  .updateCart {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .prices {
+    grid-template-columns: 1fr;
+    gap: 0.35rem;
+  }
+
+  .qtyBox {
+    min-width: 5rem;
+  }
+}

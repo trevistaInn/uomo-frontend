@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", "Helvetica Neue", sans-serif;
+  overflow-x: hidden;
+}
+
+.homecontainer {
+  max-width: 1400px;
+  width: min(92%, 1400px);
+  margin: auto;
+}
+
+@media (max-width: 768px) {
+  .homecontainer {
+    width: 94%;
+  }
+}

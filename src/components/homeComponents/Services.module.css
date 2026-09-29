@@ -1,0 +1,81 @@
+.services{
+    min-height: 30vh;
+    width: 88%;
+    margin: clamp(2rem, 4vw, 5rem) auto 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: clamp(0.5rem, 2vw, 1.5rem);
+    padding: clamp(0.75rem, 2vw, 1.25rem);
+}
+
+.service-item{
+    width: 30%;
+    text-align: center;
+    padding: clamp(0.75rem, 1.5vw, 1.25rem);
+    border-radius: 10px;
+}
+
+.service-item h2{
+    font-size: clamp(0.9rem, 1.2vw, 1.25rem);
+}
+
+.service-item p{
+    margin-top: clamp(0.35rem, 1vw, 0.625rem);
+    font-size: clamp(0.7rem, 0.9vw, 0.85rem);
+    color: #8b8888;
+}
+
+.service-item i{
+    margin-bottom: clamp(0.5rem, 1.2vw, 1.5rem);
+    font-size: clamp(1.4rem, 3vw, 3rem);
+    color: #333;
+}
+
+@media (max-width: 900px){
+    .services{
+        width: 92%;
+        min-height: 26vh;
+        margin-top: 5rem;
+    }
+
+    .service-item{
+        width: 32%;
+    }
+}
+
+@media (max-width: 700px){
+    .services{
+        width: 94%;
+        min-height: auto;
+    }
+
+    .service-item{
+        width: 33%;
+        padding: 0.65rem;
+    }
+
+    .service-item h2{
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 560px){
+    .services{
+        flex-direction: column;
+        align-items: stretch;
+        margin-top: 5rem;
+    }
+
+    .service-item{
+        width: 100%;
+    }
+
+    .service-item h2{
+        font-size: 0.95rem;
+    }
+
+    .service-item i{
+        font-size: 1.6rem;
+    }
+}

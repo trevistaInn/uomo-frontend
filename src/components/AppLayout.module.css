@@ -1,0 +1,7 @@
+.content {
+  transition: opacity 0.2s ease;
+}
+
+.contentLoading {
+  opacity: 0.45;
+}

@@ -1,0 +1,46 @@
+.ordertrack2 {
+    width: 80%;
+    text-align: center;
+}
+
+.header{
+    font-size: 1.7rem;
+    font-weight: 750;
+    margin-bottom: 5%;
+ }
+
+.orderpara{
+    font-size: 0.8rem;
+    color: #767676;
+    margin-bottom: 2%;
+ }
+
+ .orderform{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+    padding: 2% 5%;
+ }
+
+.inp1{
+    border: 2px solid rgb(159, 157, 157);
+    padding: 0.6rem;
+    font-size: small;
+    outline: none;
+ }
+
+.inp2{
+    border: 2px solid black;
+    padding: 0.6rem;
+    font-size: small;
+}
+
+.orderbutton{
+    border: 2px solid;
+    background-color: black;
+    color: white;
+    padding: 0.6rem;
+    cursor: pointer;
+}

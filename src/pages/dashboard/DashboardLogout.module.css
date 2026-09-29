@@ -1,0 +1,11 @@
+.panel {
+  max-width: 44rem;
+}
+
+.message {
+  margin: 0;
+  font-size: 0.86rem;
+  color: #333;
+  line-height: 1.7;
+}
+

@@ -1,0 +1,41 @@
+.orderdetails1{
+    font-size: 20px;
+    padding: 1rem;
+}
+
+.orderdetails2{
+    width: 14%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.orderdetails3{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    border-bottom: 1px solid rgb(233, 229, 229);
+    padding: 1rem;
+}
+
+.row {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.orderdetails4{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.trackBtn{
+    cursor: pointer;
+    background-color: #000;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-left: 15px;
+}     
+  

@@ -1,0 +1,82 @@
+.checkCircle {
+    font-size: 80px;
+    margin: 10px auto;
+    color: #B9A16B;
+}
+.orderCompleted{
+    text-align: center;
+    font-size: 38px;
+}
+.paymentDetails {
+    border: dashed 2px #EEEEEE;
+    margin: 30px auto;
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    font-size: 0.7rem;
+}
+
+.paymentDetails h3{
+    color: gray;
+}
+
+.h11 {
+  margin: 1% 0;
+  font-weight: 500;
+}
+.table1{
+    width: 50%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    border: #e5e7eb 1px solid;
+    padding: 2% 5% ;
+    font-size: 0.7rem;
+}
+
+.hr{
+    border: 1px solid #e5e7eb;
+}
+
+.tableCell{
+    display: flex;
+    justify-content: space-between; 
+    font-size: 0.7rem;
+}
+
+.buttons {
+    display: flex;
+    gap: 2rem;
+    margin-top: 2rem;
+    justify-content: center;
+    width: 50%;
+    margin: 0.5rem auto;
+}
+
+.orderCompleted1 {
+    color: #9ca3af;
+    text-align: center;
+}
+
+.orderbut,
+.orderbut1 {
+    flex: 1;
+    padding: 12px 20px;
+    background-color: black;
+    color: white;  
+    cursor: pointer;
+    font-weight: 500;
+}
+
+@media (max-width: 768px) {
+    .buttons {
+        flex-direction: column;
+    }
+
+    .orderbut,
+    .orderbut1 {
+        width: 100%;
+    }
+}

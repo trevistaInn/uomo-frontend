@@ -1,0 +1,219 @@
+.filterModal{
+    height: 100vh;
+}
+
+.filters{
+    margin: 0 auto;
+    width: 82%;
+    font-size: smaller;
+    flex: 1;
+    min-height: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding-bottom: 1rem;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.filters::-webkit-scrollbar{
+    display: none;
+}
+
+.titles{
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.productCategories{
+    margin-bottom: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.85rem 1.5rem;
+}
+
+.categoryOption{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.8rem;
+}
+
+.close {
+    cursor: pointer;
+}
+
+.colors{
+    margin-bottom: 2rem;
+    padding: 0.5rem;
+    width: 60%;
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    gap: 1rem;
+}
+
+.color{
+    display: inline-block;
+    width: 0.8rem;
+    height: 0.8rem;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+
+input:checked + .color{
+    outline: 1px solid black;
+    outline-offset: 2px;
+}
+
+.sizes {
+    margin-bottom: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
+    gap: 12px;
+}
+
+.selectedSize{
+    background-color: rgb(182, 184, 183);
+    cursor: pointer; 
+}
+
+.unselectedSize{
+    border: 1px solid rgb(225, 222, 222);
+    cursor: pointer;
+}
+
+.searchInput{
+    height: 2.5rem;
+    outline: none;
+    width: 100%;
+}
+
+.searchBrand{
+    width: 100%;
+    margin: 0.5rem 0;
+    padding: 0 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid rgb(225, 222, 222);
+}
+
+.searchBrand1 {
+    display: flex;
+    justify-content: space-between;
+    width: 99%;
+}
+
+.searchBrand2 {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+.brandsList{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 8rem;
+    margin-bottom: 1rem;
+    overflow-y: auto;
+    overflow-x: hidden;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.brandsList::-webkit-scrollbar{
+    display: none;
+}
+
+.priceSection{
+    margin-bottom: 2rem;
+    width: 100%;
+}
+
+.rangeWrap{
+    position: relative;
+    height: clamp(24px, 4vw, 30px);
+    margin: 1rem 0 0.65rem;
+    width: 100%;
+}
+
+.sliderTrack{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    height: clamp(3px, 0.6vw, 4px);
+    border-radius: 999px;
+    background: rgb(230, 230, 230);
+}
+
+.sliderFill{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: clamp(3px, 0.6vw, 4px);
+    border-radius: 999px;
+    background: rgb(40, 40, 40);
+}
+
+.range{
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    -webkit-appearance: none;
+    appearance: none;
+    background: transparent;
+    pointer-events: none;
+    height: clamp(24px, 4vw, 30px);
+}
+
+.range::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    appearance: none;
+    pointer-events: auto;
+    width: clamp(12px, 2.6vw, 16px);
+    height: clamp(12px, 2.6vw, 16px);
+    border-radius: 50%;
+    background: #fff;
+    border: 2px solid #1f1f1f;
+    cursor: pointer;
+}
+
+.range::-moz-range-thumb{
+    pointer-events: auto;
+    width: clamp(12px, 2.6vw, 16px);
+    height: clamp(12px, 2.6vw, 16px);
+    border-radius: 50%;
+    background: #fff;
+    border: 2px solid #1f1f1f;
+    cursor: pointer;
+}
+
+.priceLabels{
+    display: flex;
+    justify-content: space-between;
+    font-size: clamp(0.7rem, 1.6vw, 0.85rem);
+    color: #2b2b2b;
+    margin-bottom: 0.75rem;
+}
+
+.resetButton{
+    border: 1px solid rgb(210, 210, 210);
+    background: #fff;
+    padding: 0.45rem 0.8rem;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    cursor: pointer;
+}
+
+.actions{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}

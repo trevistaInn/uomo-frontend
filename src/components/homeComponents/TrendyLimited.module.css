@@ -1,0 +1,46 @@
+.mainthird{
+    display: grid;
+    place-items: center;
+}
+
+.thirdblock{
+    width: 90%;
+    margin: 2rem 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    place-items: center;
+}
+
+.maintitle{
+    text-align: center;
+    font-size: 2rem;
+}
+
+.categories{
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 1rem;
+    text-decoration: underline;
+    font-weight: 400;
+}
+
+.seeAll{
+    margin: 0 auto 3rem;
+    text-align: center;
+}
+
+@media (max-width: 750px){
+    .thirdblock{
+        grid-template-columns: auto auto auto;
+    }
+    .maintitle{
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 650px){
+    .thirdblock{
+        grid-template-columns: 1fr 1fr;
+    }
+}

@@ -1,0 +1,42 @@
+.form {
+  max-width: 46rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.95rem;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.9rem;
+}
+
+.form input {
+  width: 100%;
+  min-height: 2.8rem;
+  border: 1px solid #d3d3d3;
+  background: transparent;
+  padding: 0.6rem 0.75rem;
+  font-size: 0.82rem;
+}
+
+.form h2 {
+  margin: 0.5rem 0 0.2rem;
+  text-transform: uppercase;
+  font-size: 0.95rem;
+}
+
+.submitBtn {
+  width: min(100%, 11rem);
+}
+
+@media (max-width: 700px) {
+  .row {
+    grid-template-columns: 1fr;
+  }
+
+  .submitBtn {
+    width: 100%;
+  }
+}
+

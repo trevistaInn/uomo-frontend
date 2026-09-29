@@ -1,0 +1,51 @@
+.socialbar {
+  position: absolute;
+  top: 50%;
+  left: -40px;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+}
+
+.text {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  transform: rotate(180deg);
+  font-size: 14px;
+  letter-spacing: 2px;
+  color: #555;
+}
+
+.icons {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.icons a {
+  text-decoration: none;
+  color: #555;
+  font-size: 15px;
+  transition: color 0.3s ease;
+}
+
+.icons a:hover {
+  cursor: pointer;
+}
+
+@media (max-width: 940px) {
+  .socialbar {
+    left: 0;
+  }
+  .icons{
+    gap: 5px;
+  }
+}
+
+@media (max-width: 640px){
+  .socialbar{
+    display: none;
+  }
+}

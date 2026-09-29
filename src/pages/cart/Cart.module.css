@@ -1,0 +1,83 @@
+﻿.cart {
+  margin: 1rem auto;
+  width: 80%;
+  padding: 1rem;
+}
+
+.cart > section {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 0.8rem;
+}
+
+.cart1 {
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.par {
+  font-size: 0.75rem;
+  line-height: 1rem;
+  color: #6b7280;
+}
+
+.disabled {
+  cursor: not-allowed;
+}
+
+.cart2 {
+  color: #4b5563;
+}
+
+.cart > section > button {
+  width: 33%;
+  text-align: left;
+}
+
+/* Medium screens */
+@media (max-width: 1024px) {
+  .cart {
+    width: 85%;
+    padding: 0.9rem;
+  }
+
+  .cart > section button {
+    width: 50%;
+  }
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+  .cart {
+    width: 95%;
+    margin: 0.75rem auto;
+    padding: 0.75rem;
+  }
+
+  .cart > section button {
+    width: 100%;
+    font-size: 0.95rem;
+  }
+
+  .cart > section {
+    flex-direction: column;
+  }
+}
+
+/* Small phones */
+@media (max-width: 480px) {
+  .cart {
+    width: 100%;
+    margin: 0.5rem auto;
+    padding: 0.5rem;
+  }
+
+  .cart > section button {
+    width: 100%;
+    font-size: 0.9rem;
+  }
+}
+
+
+

@@ -1,0 +1,42 @@
+﻿.sixthblock {
+  margin: -5rem auto;
+  width: 88%;
+}
+
+.sixth {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 10px; 
+}
+
+.sixth img {
+  width: 100%;
+  aspect-ratio: 1 / 1; 
+  object-fit: cover;    
+  border: 1px solid #ddd;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.sixth img:hover {
+  transform: scale(0.95);
+}
+ 
+.text { 
+  font-size: 2rem; 
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+} 
+
+@media (max-width: 700px) { 
+  .sixth { 
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    gap: 0.5rem; 
+  } 
+} 
+@media (max-width: 500px) { 
+  .sixth { grid-template-columns: 1fr 1fr 1fr; 
+    gap: 0.5rem; 
+  } 
+}

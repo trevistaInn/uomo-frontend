@@ -1,0 +1,55 @@
+.note {
+  font-size: 0.82rem;
+  margin: 0 0 1.8rem;
+  color: #333;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(1rem, 2vw, 2rem);
+}
+
+.card {
+  min-width: 0;
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 0.8rem;
+}
+
+.head h2 {
+  margin: 0;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+.head button {
+  border: none;
+  background: transparent;
+  text-decoration: underline;
+  text-transform: uppercase;
+  font-size: 0.72rem;
+  cursor: pointer;
+}
+
+.card p {
+  margin: 0 0 0.35rem;
+  font-size: 0.82rem;
+  color: #383838;
+}
+
+.spacer {
+  margin-top: 0.85rem !important;
+}
+
+@media (max-width: 860px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+

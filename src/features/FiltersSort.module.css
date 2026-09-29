@@ -1,0 +1,23 @@
+.filters {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 3rem;
+  gap: 1rem;
+  padding: 0 clamp(0.5rem, 3vw, 4rem);
+}
+
+.filters1 {
+  display: flex;
+  gap: 16px;
+}
+
+.filters2 {
+  width: 176px;
+  border: 2px solid;
+  padding: 0 8px;
+}
+
+.close {
+  cursor: pointer;
+}

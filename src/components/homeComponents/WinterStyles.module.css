@@ -1,0 +1,141 @@
+.fifth {
+  margin: 2rem auto;
+  display: flex;
+  justify-content: center;
+  width: min(92.7%, 1280px);
+  height: clamp(16rem, 26vw, 25rem);
+  overflow: hidden;
+  gap: 1rem;
+}
+
+.fifth div {
+  width: 48%;
+  height: 100%;
+  margin: auto;
+  transition: transform 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.fifth div .text {
+  position: absolute;
+  bottom: 18%;
+  left: 20%;
+  text-align: left;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
+.fifth1 {
+  background-color: #dc2626;
+}
+
+.fifth2 {
+  font-size: 0.75rem;
+  line-height: 1rem;
+  text-decoration: underline;
+}
+
+.img1 {
+  width: 60%;
+  height: 100%;
+  position: absolute;
+  left: 40%;
+  border: 1px solid rgb(217, 203, 203);
+  opacity: 30%;
+}
+
+.img2{
+  width: 150%;
+  height: 220%;
+}
+
+.fifth div:hover {
+  transform: scale(1.02);
+}
+
+@media (max-width: 1200px) {
+  .fifth {
+    height: clamp(14rem, 24vw, 19rem);
+  }
+
+  .fifth div {
+    width: 50%;
+  }
+
+  .fifth div .text {
+    left: 22%;
+  }
+}
+
+@media (max-width: 992px) {
+  .fifth {
+    height: clamp(13rem, 30vw, 17rem);
+  }
+
+  .fifth div {
+    width: 50%;
+  }
+
+  .fifth div .text {
+    left: 24%;
+    bottom: 14%;
+  }
+
+  .img1 {
+    width: 64%;
+    left: 36%;
+  }
+}
+
+@media (max-width: 560px) {
+  .fifth {
+    height: auto;
+    gap: 0.75rem;
+    flex-direction: column;
+  }
+
+  .fifth div {
+    width: min(100%, 560px);
+    height: 14rem;
+  }
+
+  .fifth div .text {
+    left: 18%;
+    bottom: 12%;
+  }
+
+  .img2 {
+    width: 130%;
+    height: 200%;
+  }
+}
+
+@media (max-width: 480px) {
+  .fifth {
+    width: 94%;
+    margin: 1.5rem auto;
+    gap: 0.6rem;
+  }
+
+  .fifth div {
+    width: 100%;
+    height: 12rem;
+  }
+
+  .fifth div .text {
+    left: 20%;
+    bottom: 10%;
+    font-size: 0.85rem;
+  }
+
+  .img1 {
+    width: 66%;
+    left: 34%;
+  }
+
+  .img2{
+    width: 125%;
+    height: 180%;
+  }
+}

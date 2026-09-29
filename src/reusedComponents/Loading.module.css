@@ -1,0 +1,11 @@
+@keyframes loading{
+    0% {width: 0%;}
+    100% {width: 100%;}
+}
+
+.loading {
+    background-color: red;
+    height: 5px;
+    width: 0;
+    animation: loading 0.2s linear forwards;
+}

@@ -1,0 +1,26 @@
+.panel {
+  padding-top: 0.35rem;
+  max-width: 52rem;
+}
+
+.line {
+  color: #333;
+  line-height: 1.8;
+  font-size: 0.86rem;
+  margin: 0 0 0.6rem;
+}
+
+.inlineBtn {
+  border: none;
+  background: transparent;
+  text-decoration: underline;
+  font: inherit;
+  cursor: pointer;
+  color: #1e1e1e;
+}
+
+.inlineLink {
+  color: #1e1e1e;
+  text-decoration: underline;
+}
+
