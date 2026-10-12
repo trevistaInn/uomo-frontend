@@ -33,7 +33,7 @@ export default function CardProvider({ children }) {
   const cartItems = useCartStore((state) => state.cartItems);
   const wishlist = useWishlistStore((state) => state.wishlist);
   const count = {
-    cartCount: cartItems.reduce((totalItems, item) => item.quantity + totalItems, 0),
+    cartCount: cartItems.reduce((totalItems, item) => item?.quantity + totalItems, 0),
     wishlistCount: wishlist.length,
   };
 
